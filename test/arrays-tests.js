@@ -750,7 +750,7 @@ describe('arrays-tasks', () => {
         {
           arr: [],
           expected: [],
-        },
+        }, 
       ].forEach((data) => {
         const actual = tasks.getHexRGBValues(data.arr);
         assert.deepEqual(data.expected, actual);

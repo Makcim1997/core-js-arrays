@@ -394,8 +394,10 @@ function generateOdds(len) {
  *   getElementByIndices(['one','two','three'], [2]) => 'three'  (arr[2])
  *   getElementByIndices([[[ 1, 2, 3]]], [ 0, 0, 1 ]) => 2        (arr[0][0][1])
  */
-function getElementByIndices(/* arr, indices */) {
-  throw new Error('Not implemented');
+function getElementByIndices(arr, indices) {
+  let value;
+
+  return result[result.length - 1];
 }
 
 /**
@@ -442,8 +444,25 @@ function getFalsyValuesCount(arr) {
  *                              [0,0,0,1,0],
  *                              [0,0,0,0,1]]
  */
-function getIdentityMatrix(/* n */) {
-  throw new Error('Not implemented');
+function getIdentityMatrix(n) {
+  const result = [];
+  let index = 0;
+
+  for (let i = 0; i < n; i += 1) {
+    let arr = [];
+    for (let j = 0; j < n; j += 1) {
+      if (index === j) {
+        arr.push(1);
+      } else {
+        arr.push(0);
+      }
+    }
+
+    result.push(arr);
+    arr = [];
+    index += 1;
+  }
+  return result;
 }
 
 /**
