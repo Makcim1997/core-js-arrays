@@ -394,11 +394,9 @@ function generateOdds(len) {
  *   getElementByIndices(['one','two','three'], [2]) => 'three'  (arr[2])
  *   getElementByIndices([[[ 1, 2, 3]]], [ 0, 0, 1 ]) => 2        (arr[0][0][1])
  */
-function getElementByIndices(arr, indices) {
-  let value;
+// function getElementByIndices(arr, indices) {
 
-  return result[result.length - 1];
-}
+// }
 
 /**
  * Returns the number of all falsy values in the specified array.
@@ -721,7 +719,7 @@ module.exports = {
   calculateBalance,
   createChunks,
   generateOdds,
-  getElementByIndices,
+  // getElementByIndices,
   getFalsyValuesCount,
   getIdentityMatrix,
   getIndicesOfOddNumbers,
